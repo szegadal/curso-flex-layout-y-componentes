@@ -1,0 +1,39 @@
+@import './slider.css';
+@import './now-playing.css';
+@import './player-controls.css';
+@import './player-volume.css';
+
+.player {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  background: var(--gray40);
+  box-shadow: inset 0 0.0625rem 0 var(--gray30);
+}
+
+.player .nowPlaying {
+  grid-column: 1;
+  overflow: hidden;
+}
+.player .playerControls {
+  grid-column: 2;
+}
+.player .playerVolume {
+  grid-column: 3;
+}
+
+.player-control {
+  border: none;
+  padding: 0.5rem;
+  background: none;
+  color: var(--gray10);
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.player-playerVolume {
+  display: flex;
+  justify-content: flex-end;
+}

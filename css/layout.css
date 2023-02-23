@@ -1,0 +1,32 @@
+:root {
+  --sidebarInlineSize: 15rem;
+  --minBlockSize: 37.5rem;
+  --minInlineSize: 48rem;
+  --playerSize: 5.5rem;
+}
+
+.layout {
+  min-inline-size: var(--minInlineSize);
+}
+
+.layout-block {
+  display: flex;
+}
+
+.layout-sidebar {
+  block-size: calc(100vh - var(--playerSize));
+  inline-size: var(--sidebarInlineSize);
+  background: var(--gray60);
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.layout-main {
+  block-size: calc(100vh - var(--playerSize));
+  overflow: auto;
+}
+
+.layout-bottom {
+
+}
+

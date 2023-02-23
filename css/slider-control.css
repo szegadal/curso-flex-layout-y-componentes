@@ -1,0 +1,33 @@
+.sliderControl {
+  flex-shrink: 0;
+}
+
+.sliderControl button {
+  background: var(--gray60);
+  color: var(--gray10);
+  inline-size: 1.875rem;
+  block-size: 1.875rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.sliderControl button:hover, .sliderControl button:focus {
+  color: var(--white);
+}
+
+.sliderControl button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  color: var(--gray10);
+}
+
+.sliderControl-prev i {
+  position: relative;
+  inset-inline-start: -0.0625rem;
+
+}
+
+.sliderControl-next i {
+  position: relative;
+  inset-inline-start: 0.0625rem;
+}
